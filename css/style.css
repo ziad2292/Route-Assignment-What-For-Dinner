@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #ff6900;
+  --light-orange: #ffedd4;
+  --hover-orange: #ffd6a7;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.fs-8 {
+  font-size: 12px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.orange-color {
+  color: var(--orange) !important;
+}
+
+.orange-bg {
+  background-color: var(--orange);
+}
+
+.orange-light-bg {
+  background-color: var(--light-orange) !important;
+}
+
+.orange-border {
+  border-color: var(--orange) !important;
+}
+
+.orange-hover {
+  transform: color 0.3s ease;
+}
+
+.orange-hover:hover {
+  color: var(--orange);
+}
+
+.orange-bg-hover {
+  transform: background-color 0.3s ease;
+}
+
+.orange-bg-hover:hover {
+  background-color: #ffd6a7;
+}
+
+.blue-color {
+  color: #155dfc;
+}
+
+.blue-bg {
+  background-color: #dbeafe;
+}
+
+.yellow-color {
+  color: #d08700;
+}
+
+.yellow-border {
+  border-color: #d08700 !important;
+}
+
+.yellow-dark-bg {
+  background-color: #d08700;
+}
+
+.yellow-bg {
+  background-color: #fef9c2;
+}
+
+.red-color {
+  color: #e7000b;
+}
+
+.red-bg {
+  background-color: #ffe2e2;
+}
+
+.green-color {
+  color: #00a63e;
+}
+
+.green-bg {
+  background-color: #dbfce7;
+}
+
+.pink-color {
+  color: #e60076;
+}
+
+.pink-bg {
+  background-color: #fce7f3;
+}
+
+.dimmer {
+  transition: filter 0.3s ease;
+}
+
+.dimmer:hover {
+  filter: brightness(0.1) !important;
+}
+
+body {
+  font-family: uisansser;
+  background-color: #fffbea;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+}
+
+main .left {
+  width: 33.333%;
+}
+
+main .right {
+  width: 66.666%;
+}
+
+main .right .tags .region {
+  color: #2051e7;
+  background-color: #dbeafe;
+}
+
+main .limit {
+  background-color: #fef2f2;
+}
+
+main .limit h3 {
+  color: #9f0712 !important;
+}
+
+main .tabs li {
+  transition: color 0.3s ease;
+}
+
+main .tabs .nav button:hover {
+  border: none !important;
+}
+
+main .nav-pills .nav-link.active,
+main .nav-pills .show > .nav-link {
+  background: none;
+  color: var(--orange) !important;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: var(--orange);
+  transform: translateX(-10%);
+}
+
+main .nav-pills .nav-link.active.underline-hover::after,
+.underline-hover.active::after {
+  width: 120%;
+}
+
+main #pills-ingredients {
+  background-color: #fffaec;
+}
+
+main .tab-content div {
+  height: 350px;
+  overflow-y: auto;
+}
+
+main button {
+  background: linear-gradient(
+    140deg,
+    rgba(255, 102, 0, 1) 26%,
+    rgba(251, 50, 51, 1) 65%
+  );
+
+  transition: transform 0.3s ease, background-color 0s ease;
+}
+
+main button:hover {
+  background: none;
+  background-color: #e80008 !important;
+  transform: scale(1.05);
+}
